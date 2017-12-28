@@ -27,3 +27,4 @@ git remote add origin url	# push할 url의 repo를 지정
 git push -u origin master 	# 원격저장소에 저장 (github)
 ```
 
+.

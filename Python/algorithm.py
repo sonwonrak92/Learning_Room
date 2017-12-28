@@ -22,4 +22,4 @@ def isAnagram(s1,s2):
 print (isAnagram("Listen","slient")) # True
 print (isAnagram("listen","slienk")) # False
 print (isAnagram("apple","eppal")) # True
-print (isAnagram("apple","epzkz")) # False
+print (isAnagram("apple","epzkz")) # False#

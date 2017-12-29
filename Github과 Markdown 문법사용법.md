@@ -25,6 +25,7 @@ git add . 				   # 저장할 파일 목록추가/ add 뒤에 .은 모든 파일�
 git commit -m "~" 		    # 로컬저장소에 저장
 git remote add origin url	# push할 url의 repo를 지정
 git push -u origin master 	# 원격저장소에 저장 (github)
+
 ```
 
 .

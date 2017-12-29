@@ -23,3 +23,8 @@ print (isAnagram("Listen","slient")) # True
 print (isAnagram("listen","slienk")) # False
 print (isAnagram("apple","eppal")) # True
 print (isAnagram("apple","epzkz")) # False#
+
+
+### Fcactorial
+import math
+print (math.factorial(10))

@@ -122,7 +122,7 @@
 
 ## 함수와 매개변수
 
-> 자바의 class와 유사한 기능
+> 자바의 method와 유사한 기능
 
 - **함수의 정의**
 
@@ -187,7 +187,7 @@ print(list1[-1])     #-의 경우 역방향으로 진행
 
 ```
 
-- 리스트 값 추가
+- **리스트 값 추가**
 
   ```python
   list1 = [1, 2, 3]
@@ -208,7 +208,7 @@ print(list1[-1])     #-의 경우 역방향으로 진행
   @실행결과 : [1, 2, 3, 4, 1, 2, 3, 4]
   ```
 
-- 리스트 값 삭제
+- **리스트 값 삭제**
 
   ```python
   #특정 위치의 값 삭제
@@ -216,6 +216,140 @@ print(list1[-1])     #-의 경우 역방향으로 진행
 
   #특정 값 지우기 - 중복값이 있을 경우 가장 첫값을 지움
   list1.remove(3)
+  ```
+
+
+
+
+## 딕셔너리
+
+> hashmap과 비슷한 기능 영어사전과 비슷한 구조라 생각하면 쉬움
+
+- **인덱스 대신 키값으로 접근**
+
+  ```python
+  menu = {
+      '중' : '짜장면',
+      '한' : '김치찌개',
+      '일' : '초밥'
+  }
+
+  print(menu['일'])
+  @실행결과 : 초밥
+  ```
+
+- **딕셔너리 값의 수정, 추가, 삭제**
+
+  ```python
+  menu['중'] = '짬뽕' #수정
+  menu['양'] =  '파스타' #추가
+  del menu['양']  #삭제 1
+  menu.pop('중')  #삭제 2
+  ```
+
+- **딕셔너리 간의 수정**
+
+  > update의 경우 없는 값은 append, 중복된 값은 update
+
+  ```python
+  new_menu = {
+      '중' : '탕수육',
+      '한' : '불고기'
+  }
+  menu.update(new_menu)
+  print(menu)
+  @실행결과 : {'중': '탕수육', '한': '불고기', '일': '초밥'}
+
+  menu = {
+      '중' : '짜장면',
+      '한' : '김치찌개',
+      '일' : '초밥'
+  }
+  new_menu.update(menu) 
+  print(new_menu)
+  @실행결과 : {'중': '짜장면', '한': '김치찌개', '일': '초밥'}
+
+
+  ```
+
+  ​
+
+## for문
+
+- **for in list** - 리스트의 길이만큼 반복
+
+  ```python
+  list = [1, 2]
+  for pattern in list:
+      print(list)
+  @실행결과 : 1
+      	   2
+  ```
+
+- **for in range** - 정해준 범위만큼 반복
+
+  ```python
+  list = [1, 2, 3, 4, 5]
+
+  for i in range(5) #0~4까지 5번 실행
+  	print(i)
+  @실행결과 : 0
+      	   1
+
+  for i in range(len(list))
+  	print(i)
+  #위와 동일
+  ```
+
+- **for in enumerate** - 인덱스값과 내용값 리턴
+
+  ```python
+  name ['강아지', '토끼', '고양이']
+  for i, name in enumerate(list)
+  	print('{}번째 {}'.format(i,name)
+  @실행결과 : 0번째 강아지
+             1번째 토끼
+             2번째 고양이
+  ```
+
+- **for in dictionary**
+
+  ```python
+  names = {'정':'약용',
+          '홍':'길동',
+         '이':'순신'}
+
+  #key값을 가져오고 싶을 때
+  for key in names:  #.key는 생략가능
+      print(key)
+  @실행결과 : 정 / 홍 / 이
+
+  #value값을 가져오고 싶을 때    
+  for value in names.values():
+      print(value)
+  @실행결과 : 약용 / 길동 / 순신   
+      
+  #두개다 가져오고 싶을 때
+  for key, value in names.items():
+      print(key, value)
+  ```
+
+  ​
+
+## 모듈
+
+> java의 class와 비슷한 기능
+
+- 만들어진 코드를 가져와 쓰는 것
+
+  ```python
+  import module_name #import할 모듈이름을 선언
+
+  import math #수학관련 모듈
+  math.pi
+
+  import random #랜덤값을 추출하는 모듈
+  random.choice()
   ```
 
   ​

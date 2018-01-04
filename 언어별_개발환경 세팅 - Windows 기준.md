@@ -1,5 +1,16 @@
 # 개발환경 세팅 - Windows 기준
 
+## IDE -[ MS VScode설치 ] 
+
+**VScode 설치 - IDE**
+
+> VS cod설치 링크 : https://code.visualstudio.com/
+
+- python 플러그인 설치 
+  - 확장열기[ctrl+shift+x] - 마켓플레이스검색창에 python입력 후 설치
+
+------
+
 ## ABAP
 
 - ALV, UI5 , HANA DB MODELING , HCP
@@ -48,9 +59,22 @@
 
 ------
 
-## Ruby
+## Ruby on rails
 
-- 크롤링 , 웹사이트
+- **루비 설치**
+
+  > 루비 설치 링크 : https://www.ruby-lang.org/ko/downloads/
+
+
+- **rails 설치**
+
+  - 루비 설치 후 ruby prompt를 실행, 아래의 명령어 입력
+
+    ```ruby
+    gem install rails
+    ```
+
+    ​
 
 ------
 
@@ -68,13 +92,6 @@
    # 명령어를 실행하면 바로 아래줄에 버전이 나타나게 됩니다.
    # 버전이 나타나지 않았다면 설치가 올바르게 되지 않은 것입니다.
   ```
-
-- **VScode 설치 - IDE**
-
-  > VS cod설치 링크 : https://code.visualstudio.com/
-
-  - python 플러그인 설치 
-    - 확장열기[ctrl+shift+x] - 마켓플레이스검색창에 python입력 후 설치
 
 - **Hello World 출력해보기**
 

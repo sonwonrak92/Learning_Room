@@ -120,52 +120,7 @@
 
 
 
-## 함수와 매개변수
-
-> 자바의 method와 유사한 기능
-
-- **함수의 정의**
-
-  ```python
-  #함수 선언
-  def function():
-  	print("안녕, 함수")
-      
-  #함수의 사용법
-  function()
-  @실행결과 : 안녕, 함수
-  ```
-
-- **매개변수 사용**
-
-  ```python
-  def print_root(a, b, c):
-      r1 = a * b+c
-      
-  print_root(1, 2, 3) #정의한 함수에 맞는 매개변수를 넣어줘야함.
-  ```
-
-- **format 함수 사용**
-
-  ```python
-  name = '락'
-  color = '딸기'
-  print(' 제 이름은 {}이고 좋아하는 과일은 {}입니다.'.format(name, color ))
-
-  str1 = "{}와 {}는 동물입니다".format(고양이, 강아지)
-
-  # format함수의 매개변수 순서대로 대괄호와 연결
-  ```
-
-- **사용자 입력 함수**
-
-  ```python
-  input() #자바의 scanner와 같은 기능
-  ```
-
-
-
-## 리스트
+## 리스트=[]
 
 > 다수의 값을 담을 수 있는 변수 / 자바의 배열과 비슷한 기능
 
@@ -192,10 +147,15 @@ print(list1[-1])     #-의 경우 역방향으로 진행
   ```python
   list1 = [1, 2, 3]
 
-  #기존의 리스트에 4 추가
+  #마지막 인덱스에 값 추가
   list1.append(4)
   print(list1)
   @실행결과 :  [1, 2, 3, 4]
+      
+  #원하는 인덱스에 값 추가
+  list1.insert(2, 555)
+  print(list1)
+  @실행결과 : [1,2,555,3]
       
   #리스트에 원소하나 추가하여 새로운 리스트생성
   list2 = list1 + [5]    
@@ -221,7 +181,7 @@ print(list1[-1])     #-의 경우 역방향으로 진행
 
 
 
-## 딕셔너리
+## 딕셔너리={}
 
 > hashmap과 비슷한 기능 영어사전과 비슷한 구조라 생각하면 쉬움
 
@@ -273,7 +233,7 @@ print(list1[-1])     #-의 경우 역방향으로 진행
 
 
 
-## 튜플
+## 튜플=()
 
 > 리스트와 비슷하지만, 순서가 정해져있고 수정이 불가함
 
@@ -349,6 +309,96 @@ print(list1[-1])     #-의 경우 역방향으로 진행
   ```
 
   ​
+
+## while문
+
+```python
+while 조건:
+    실행코드
+ 
+list = ['사과', '바나나', '키위']
+while i < len(list):
+    print(list[i])
+    i = i + 1
+    
+user_input = None
+while user_input not in list:
+    user_input = input('사과,바나나,키위 중 선택하세요')
+```
+
+
+
+## 함수와 매개변수
+
+> 자바의 method와 유사한 기능
+
+- **함수의 정의**
+
+  ```python
+  #함수 선언
+  def function():
+  	print("안녕, 함수")
+      
+  #함수의 사용법
+  function()
+  @실행결과 : 안녕, 함수
+  ```
+
+- **매개변수 사용**
+
+  ```python
+  def print_root(a, b, c):
+      r1 = a * b+c
+      
+  print_root(1, 2, 3) #정의한 함수에 맞는 매개변수를 넣어줘야함.
+  ```
+
+- **format 함수 사용**
+
+  ```python
+  name = '락'
+  color = '딸기'
+  print(' 제 이름은 {}이고 좋아하는 과일은 {}입니다.'.format(name, color ))
+
+  str1 = "{}와 {}는 동물입니다".format(고양이, 강아지)
+
+  # format함수의 매개변수 순서대로 대괄호와 연결
+  ```
+
+- **사용자 입력 함수**
+
+  ```python
+  input() #자바의 scanner와 같은 기능
+  ```
+
+## break, continue
+
+> break는 상위블럭을 완전 종료, continue이전 라인을 실행후 상위블럭으로 이동
+
+```python
+list = [1,2,3,4]
+
+#break
+for i in list:
+	if i%2 == 0:
+        print(i)
+        break
+@실행결과 : 2
+    
+#continue
+for i in range(3):
+    if i%2 == 0 :
+        continue
+    print(i)
+    print(i)
+@실행결과 :
+    1
+    1
+    3
+    3
+```
+
+
 
 ## 모듈
 

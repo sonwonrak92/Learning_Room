@@ -1,47 +1,18 @@
-# Programming Languages
+# Basic Ruby - MVC
 
-## ABAP
+## 루비 프로젝트 만들기
 
-- ALV, UI5 , HANA DB MODELING , HCP
+- git bash 또는 powershell을 이용해 프로젝트를 만들 디렉토리로 이동 후 아래의 명령어 입력
 
-## Java
+  ```ruby
+  rails new 프로젝트명
+  ```
 
-- 기본문법
+## 컨트롤러 만들기
 
-## Ruby
+- 프로젝트를 만든 후 아래의 명령어 입력
 
-- 크롤링 , 웹사이트
-
-## Python
-
-- 데이터분석
-
-## Kotlin
-
-- 안드로이드개발
-
-
-
-
-# MOOC
-
-## Harvard CS50 
-
-- 비전공자를 위한 컴퓨터과학 입문 - Harvard CS50
-- http://www.edwith.org/connect_cs #네이버 제공
-
-## Udacity
-
-- 안드로이드 기초
-- 자바기초
-- 데이터 사이언스
-
-## 인프런
-
-- 자바
-- 파이썬
-
-## 생활코딩
-
-- 웹의 기초 (HTML, CSS , JavaScript )
-- git
+  ```ruby
+  rails g controller 컨트롤러명 
+  # g란? generate의 줄임말
+  ```

@@ -242,7 +242,7 @@ print(list1[-1])     #-의 경우 역방향으로 진행
 
   ```python
   menu['중'] = '짬뽕' #수정
-  menu['양'] =  '파스타' #추가
+  menu['양'] = '파스타' #추가
   del menu['양']  #삭제 1
   menu.pop('중')  #삭제 2
   ```
@@ -268,11 +268,24 @@ print(list1[-1])     #-의 경우 역방향으로 진행
   new_menu.update(menu) 
   print(new_menu)
   @실행결과 : {'중': '짜장면', '한': '김치찌개', '일': '초밥'}
-
-
   ```
 
-  ​
+
+
+
+## 튜플
+
+> 리스트와 비슷하지만, 순서가 정해져있고 수정이 불가함
+
+- **튜플 만들기**
+
+  ```python
+  tuple = (1,2,3) #소괄호를 사용한다
+  ```
+
+- 값을 수정하거나 삭제하는 것이 불가능
+
+
 
 ## for문
 
@@ -281,22 +294,23 @@ print(list1[-1])     #-의 경우 역방향으로 진행
   ```python
   list = [1, 2]
   for pattern in list:
-      print(list)
+      print(pattern)
   @실행결과 : 1
       	   2
   ```
+
 
 - **for in range** - 정해준 범위만큼 반복
 
   ```python
   list = [1, 2, 3, 4, 5]
 
-  for i in range(5) #0~4까지 5번 실행
+  for i in range(5): #0~4까지 5번 실행
   	print(i)
   @실행결과 : 0
       	   1
 
-  for i in range(len(list))
+  for i in range(len(list)):
   	print(i)
   #위와 동일
   ```
@@ -304,8 +318,8 @@ print(list1[-1])     #-의 경우 역방향으로 진행
 - **for in enumerate** - 인덱스값과 내용값 리턴
 
   ```python
-  name ['강아지', '토끼', '고양이']
-  for i, name in enumerate(list)
+  name = ['강아지', '토끼', '고양이']
+  for i, name in enumerate(list):
   	print('{}번째 {}'.format(i,name)
   @실행결과 : 0번째 강아지
              1번째 토끼
@@ -340,7 +354,9 @@ print(list1[-1])     #-의 경우 역방향으로 진행
 
 > java의 class와 비슷한 기능
 
-- 만들어진 코드를 가져와 쓰는 것
+- **모듈사용하기**
+
+  - 사용할 모듈이 같은 폴더안에 있어야함.
 
   ```python
   import module_name #import할 모듈이름을 선언
@@ -350,6 +366,21 @@ print(list1[-1])     #-의 경우 역방향으로 진행
 
   import random #랜덤값을 추출하는 모듈
   random.choice()
+  ```
+
+- **모듈만들기**
+
+  - .py파일로 만들어 그 곳에 함수를 넣어두면 모듈이 된다.
+
+  ```python
+  def func1():
+      print("모듈의 첫번째 함수")
+      
+  def func2():
+      print("모듈의 두번째 함수")
+
+  def func3():
+      print("모듈의 세번째 함수")    
   ```
 
   ​
